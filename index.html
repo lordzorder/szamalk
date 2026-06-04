@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SZÁMALK Training - új főoldal koncepció</title>
+    <meta
+      name="description"
+      content="Letisztult, színes redesign koncepció a SZÁMALK Training főoldalához képzési típusokkal és dinamikus tanfolyami naptárral."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="SZÁMALK Training főoldal">
+        <span class="brand-mark">SZ</span>
+        <span>
+          <strong>SZÁMALK</strong>
+          <small>Training</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        <span class="sr-only">Menü</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="primary-menu" class="nav-menu" aria-label="Fő navigáció">
+        <a href="#kepzesek">Képzéseink</a>
+        <a href="#naptar">Naptár</a>
+        <a href="#ajanlatok">Ajánlatok</a>
+        <a href="#kapcsolat">Kapcsolat</a>
+        <a class="nav-cta" href="#naptar">Aktuális dátumok</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <p class="eyebrow">Felnőttképzés, IT és vállalati tudásfejlesztés</p>
+          <h1 id="hero-title">SZÁMALK Training</h1>
+          <p class="hero-copy">
+            Nyílt és vállalati képzések modern, üzleti tempóra hangolt formában:
+            IT, Office produktivitás, vezetői tréningek és személyre szabott fejlesztések.
+          </p>
+          <div class="hero-actions" aria-label="Fő műveletek">
+            <a class="button button-primary" href="#kepzesek">Képzések böngészése</a>
+            <a class="button button-secondary" href="#naptar">Képzési naptár</a>
+          </div>
+          <dl class="hero-metrics" aria-label="Gyors információk">
+            <div>
+              <dt>Következő kezdés</dt>
+              <dd data-next-course>2026. június 22.</dd>
+            </div>
+            <div>
+              <dt>Kiemelt irányok</dt>
+              <dd>IT - Office - Vezetés</dd>
+            </div>
+            <div>
+              <dt>Helyszín</dt>
+              <dd>Budapest és online</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section training-types" id="kepzesek" aria-labelledby="training-title">
+        <div class="section-header">
+          <p class="eyebrow dark">Képzési kínálat</p>
+          <h2 id="training-title">Képzési típusok</h2>
+          <p>
+            A jelenlegi főoldal legfontosabb tartalmi tengelyei: technológiai képzések,
+            irodai produktivitás, vezetői fejlesztés, tréning és egyedi konzultáció.
+          </p>
+        </div>
+
+        <div class="training-grid">
+          <article class="training-card accent-blue">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+              alt="Laptopon dolgozó résztvevő programozási képzésen"
+            />
+            <div class="training-card-body">
+              <span class="pill">IT műszaki</span>
+              <h3>Programozás, rendszerek, DevOps</h3>
+              <p>Cisco, Linux, Python, SQL, PowerShell, Windows Server és konténerizációs témák.</p>
+              <a href="#naptar">Dátumok</a>
+            </div>
+          </article>
+
+          <article class="training-card accent-cyan">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"
+              alt="Adatelemzési dashboard és irodai produktivitási környezet"
+            />
+            <div class="training-card-body">
+              <span class="pill">Office</span>
+              <h3>Excel, Power BI, Office 365</h3>
+              <p>Moduláris tudáslépcsők, automatizálás, riportolás és irodai munkafolyamatok.</p>
+              <a href="#naptar">Dátumok</a>
+            </div>
+          </article>
+
+          <article class="training-card accent-coral">
+            <img
+              src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"
+              alt="Vezetői workshop megbeszélés közben"
+            />
+            <div class="training-card-body">
+              <span class="pill">IT vezetői</span>
+              <h3>ITIL, PRINCE2, agilis működés</h3>
+              <p>Üzleti szemléletű menedzsment és módszertani képzések vizsgacsomagokkal.</p>
+              <a href="#naptar">Dátumok</a>
+            </div>
+          </article>
+
+          <article class="training-card accent-green">
+            <img
+              src="https://images.unsplash.com/photo-1543269865-cbf427effbad?auto=format&fit=crop&w=900&q=80"
+              alt="Készségfejlesztő tréning csoportmunkával"
+            />
+            <div class="training-card-body">
+              <span class="pill">Training & Coaching</span>
+              <h3>Készségfejlesztés és vezetői tréning</h3>
+              <p>Együttműködés, önmenedzsment, projektmunka, coaching és csapatfejlesztés.</p>
+              <a href="#kapcsolat">Ajánlatkérés</a>
+            </div>
+          </article>
+
+          <article class="training-card accent-amber">
+            <img
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80"
+              alt="Beszélgető csoport nyelvi képzésen"
+            />
+            <div class="training-card-body">
+              <span class="pill">Nyelvi képzés</span>
+              <h3>Üzleti és szakmai nyelvi fejlesztés</h3>
+              <p>Munkahelyi kommunikációhoz és szakmai környezethez igazított nyelvi programok.</p>
+              <a href="#kapcsolat">Érdekel</a>
+            </div>
+          </article>
+
+          <article class="training-card accent-violet">
+            <img
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
+              alt="Egyéni konzultáció üzleti oktatási környezetben"
+            />
+            <div class="training-card-body">
+              <span class="pill">Egyéni fejlesztés</span>
+              <h3>Konzultációk és céges programok</h3>
+              <p>Testreszabott tananyag, célzott támogatás és vállalati igényekre szabott ütemezés.</p>
+              <a href="#kapcsolat">Ajánlatot kérek</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section calendar-section" id="naptar" aria-labelledby="calendar-title">
+        <div class="section-header calendar-heading">
+          <div>
+            <p class="eyebrow dark">Nyílt tanfolyamok</p>
+            <h2 id="calendar-title">Képzési naptár</h2>
+            <p>Aktuális nyílt képzések dátummal, kategóriával és gyors áttekintéssel.</p>
+          </div>
+          <div class="calendar-summary" aria-live="polite">
+            <span data-event-count>0</span>
+            <small>megjelenített képzés</small>
+          </div>
+        </div>
+
+        <div class="calendar-toolbar" aria-label="Naptár vezérlők">
+          <div class="segmented-control" role="group" aria-label="Képzési kategória">
+            <button class="filter-button active" type="button" data-filter="all">Mind</button>
+            <button class="filter-button" type="button" data-filter="IT">IT</button>
+            <button class="filter-button" type="button" data-filter="Office">Office</button>
+            <button class="filter-button" type="button" data-filter="Vezetői">Vezetői</button>
+            <button class="filter-button" type="button" data-filter="Soft skill">Soft skill</button>
+          </div>
+          <div class="segmented-control" role="group" aria-label="Nézet">
+            <button class="view-button active" type="button" data-view="calendar">Naptár</button>
+            <button class="view-button" type="button" data-view="list">Lista</button>
+          </div>
+        </div>
+
+        <div class="calendar-layout" data-view-mode="calendar">
+          <div class="calendar-board" aria-label="Havi naptár">
+            <div class="month-switcher" data-month-tabs></div>
+            <div class="weekdays" aria-hidden="true">
+              <span>H</span>
+              <span>K</span>
+              <span>Sze</span>
+              <span>Cs</span>
+              <span>P</span>
+              <span>Szo</span>
+              <span>V</span>
+            </div>
+            <div class="calendar-days" data-calendar-days></div>
+          </div>
+
+          <aside class="event-panel" aria-label="Képzéslista">
+            <div class="event-panel-head">
+              <h3 data-panel-title>Következő képzések</h3>
+              <button class="ghost-button" type="button" data-clear-date>Dátumszűrő törlése</button>
+            </div>
+            <div class="event-list" data-event-list></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section offers" id="ajanlatok" aria-labelledby="offers-title">
+        <div class="section-header">
+          <p class="eyebrow dark">Kiemelt irányok</p>
+          <h2 id="offers-title">Kiemelt ajánlatok</h2>
+          <p>A főoldali ajánlatok modernebb, könnyebben pásztázható szerkezetben jelennek meg.</p>
+        </div>
+
+        <div class="offer-grid">
+          <article class="offer-item">
+            <span class="offer-date">Office</span>
+            <h3>MS Office szakértői támogatás</h3>
+            <p>Azonnali, gyakorlati segítség, amikor nem teljes képzésre, hanem működő megoldásra van szükség.</p>
+          </article>
+          <article class="offer-item">
+            <span class="offer-date">Workshop</span>
+            <h3>OkosOtthon workshop</h3>
+            <p>Technológiai szemléletformálás és élményalapú tanulás rövid, fókuszált formátumban.</p>
+          </article>
+          <article class="offer-item">
+            <span class="offer-date">Vizsga</span>
+            <h3>ITIL Foundation csomag</h3>
+            <p>Gyakorlatorientált felkészítés tanfolyammal, próbavizsgával és vizsgacsomaggal.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-band" id="kapcsolat" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Kapcsolat</p>
+          <h2 id="contact-title">Kérj célzott képzési ajánlatot</h2>
+          <p>
+            SZÁMALK Oktatási és Informatikai Zrt. - 1118 Budapest, Dayka Gábor u. 3.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-light" href="mailto:training@szamalk.hu">training@szamalk.hu</a>
+          <a class="button button-outline-light" href="tel:+3614918974">+36 1 491 8974</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>SZÁMALK Training redesign koncepció - fehér alap, sötétkék fókusz, színes képzési rendszer.</p>
+      <p>
+        Tartalmi kiindulás:
+        <a href="https://szamalk.hu/kezdolap">szamalk.hu/kezdolap</a>
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
